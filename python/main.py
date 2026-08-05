@@ -31,13 +31,3 @@ def classificar_ugencia(descricao):
         contents=prompt
     )
     return resposta.text
-
-
-cad_chamado("luis","financeiro","impressora nao funciona","gostaria de fazer uma reclamação a empressora do predio nao esta funcionando")
-cad_chamado("emilien beaugrand","financeiro","eu quero cafe", "meu cafe nao chegou na minha sala")
-lista_de_chamados()
-editar_chamado(1,"madona")
-lista_de_chamados()
-deletar_chamado(1)
-lista_de_chamados()
-print(classificar_ugencia("minha impressora nao quer funcionar ligo e ela nao liga"))
