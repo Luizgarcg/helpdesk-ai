@@ -14,8 +14,12 @@ def lista_de_chamados():
        
 def editar_chamado(indice,novo_titulo):
     chamados[indice].titulo = novo_titulo
+
+def deletar_chamado(indice):
+    chamados.pop(indice)
     
     
 cad_chamado("luis","financeiro","impressora nao funciona","gostaria de fazer uma reclamação a empressora do predio nao esta funcionando")
 cad_chamado("emilien beaugrand","financeiro","eu quero cafe", "meu cafe nao chegou na minha sala")
 lista_de_chamados()
+
