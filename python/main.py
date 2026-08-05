@@ -8,3 +8,6 @@ class Chamado:
 def cad_chamado(nome,setor,titulo,descricao):
     novo = Chamado(nome,setor,titulo,descricao)
     chamados.append(novo)
+def lista_de_chamados():
+   for i in chamados:
+       print(i.nome,i.titulo)
