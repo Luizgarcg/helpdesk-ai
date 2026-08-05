@@ -1,3 +1,7 @@
+import os
+from dotenv import load_dotenv
+load_dotenv()
+chave = os.getenv("GEMINI_API_KEY")
 chamados = []
 class Chamado:
    def __init__ (self,nome,setor,titulo,descricao,):
@@ -26,4 +30,3 @@ editar_chamado(1,"madona")
 lista_de_chamados()
 deletar_chamado(1)
 lista_de_chamados()
-
