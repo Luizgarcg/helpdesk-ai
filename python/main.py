@@ -21,6 +21,9 @@ def editar_chamado(indice,novo_titulo):
 
 def deletar_chamado(indice):
     chamados.pop(indice)
+
+def classificar_ugencia(descricao):
+    prompt = f"classifique a urgencia desse chamado de suporte como baixa media ou alta. responda-me com apenas uma unica palavra descrição: {descricao}"
     
     
 cad_chamado("luis","financeiro","impressora nao funciona","gostaria de fazer uma reclamação a empressora do predio nao esta funcionando")
