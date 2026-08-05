@@ -1,7 +1,9 @@
+from google import genai
 import os
 from dotenv import load_dotenv
 load_dotenv()
 chave = os.getenv("GEMINI_API_KEY")
+client = genai.Client(api_key=chave)
 chamados = []
 class Chamado:
    def __init__ (self,nome,setor,titulo,descricao,):
