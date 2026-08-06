@@ -1,10 +1,9 @@
-from main import cad_chamado, classificar_ugencia, chamados
 from flask import Flask, render_template, request
-
+from main import cad_chamado, classificar_ugencia, chamados
 app = Flask(__name__)
 @app.route("/")
 def pagina_inicial():
-    return render_template("index.html")
+    return render_template("index.html", chamados=chamados)
 @app.route("/cadastrar", methods=["POST"])
 def cadastrar():
     nome = request.form["nome"]
