@@ -6,13 +6,14 @@ chave = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=chave)
 chamados = []
 class Chamado:
-   def __init__ (self,nome,setor,titulo,descricao,):
+   def __init__ (self,nome,setor,titulo,descricao,urgencia):
        self.nome = nome
        self.setor = setor
        self.titulo = titulo
        self.descricao = descricao
-def cad_chamado(nome,setor,titulo,descricao):
-    novo = Chamado(nome,setor,titulo,descricao)
+       self.urgencia = urgencia
+def cad_chamado(nome,setor,titulo,descricao,urgencia):
+    novo = Chamado(nome,setor,titulo,descricao,urgencia)
     chamados.append(novo)
 def lista_de_chamados():
    for i in chamados:

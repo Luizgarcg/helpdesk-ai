@@ -10,8 +10,8 @@ def cadastrar():
     setor = request.form["setor"]
     titulo = request.form["titulo"]
     descricao = request.form["descricao"]
-    cad_chamado(nome, setor, titulo, descricao)
-    classificar_ugencia(descricao)
+    urgencia = classificar_ugencia(descricao)
+    cad_chamado(nome, setor, titulo, descricao,urgencia)
     return redirect(url_for("pagina_inicial"))
 
 
